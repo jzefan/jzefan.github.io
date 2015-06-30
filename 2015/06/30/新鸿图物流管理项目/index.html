@@ -45,7 +45,7 @@
 
 
 
-  <title> 录井资料综合解释评价系统 // 虎年做父亲 </title>
+  <title> 新鸿图物流管理项目 // 虎年做父亲 </title>
 </head>
 
 <body>
@@ -140,7 +140,7 @@
           
           
             
-              录井资料综合解释评价系统
+              新鸿图物流管理项目
             
           
         </h1>
@@ -148,7 +148,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          發表於 2015-06-21
+          發表於 2015-06-30
         </span>
 
         
@@ -165,56 +165,7 @@
       
 
       
-        <p><img src="/images/dg_login.png" alt="解释系统登录界面"></p>
-<h1 id="介绍">介绍</h1><p>这是一个为天津大港油田-渤海钻探有限公司第一录井分公司做的一个软件系统。传统上，解释人员精选出一些井数据，依据自我经验创建标准图板，然后使用这个图标在某个地区对当前开采的井进行解释分析；整个过程包括帅选特征井，去除无关数据，打印图板，使用图板和新井数据进行对比，根据解释人员经验得出解释结果。这个过程的主要问题和缺点是：</p>
-<ol>
-<li>数据分散；每个解释人员使用Excel文件保存自己的图板数据</li>
-<li>图板数据不一致，解释的结果差异性大；同一个地区，不同的解释人员可能使用不同的图板，每个解释人员根据图板解释的结果都不一样，解释结果的主观因素强。</li>
-<li>缺少一个统一的交流平台；解释过程中规范性不强，在不同地区解释结果的标识不一样，解释人员交流起来常常效率不高。</li>
-<li>解释工作的门槛仍然高，不准确，难以掌握。</li>
-</ol>
-<p>针对这些问题，我们帮录井公司实现了一个随钻智能解释系统，其主要是通过现有的数据库资源的整理归纳，建立一套相对完整的、科学的，且有实践经验和理论为基础的录井解释模式。通过智能解释软件，查看浏览录井现场实时信息的解释结论。为录井资料解释评价人员、井场录井人员以及油田各单位录井实时信息应用人员提供方便、快捷的信息服务，提高解释符合率。</p>
-<p>该系统的特点：</p>
-<ul>
-<li>随钻智能解释系统是建立在录井信息平台上的应用软件。是录井信息化资源的进一步应用。该系统完全实现了资源共享。减少了解释评价人员以往所做的重复性的收集数据的工作(除试油数据不属于录井公司管理需人工导入)。</li>
-<li>随钻智能解释系统可随时更新和细化解释图板。随着数据资源的积累，可随时对各种解释图板进行更新、修正，以满足解释新井需要；根据需要，可自定义小范围的井来细化解释图板，以提高解释符合率。</li>
-<li>随钻智能解释系统解释模块即相互独立、又相互联系。该系统按专业解释模块划分。比如：气测解释、岩屑解释、地化解释、定量荧光解释。可根据具体井的要求分模块进行单项解释，也可选择多项综合解释。图板生成软件可按专业模块独立安装。</li>
-</ul>
-<p>图板系统分气测图板、岩屑图板、地化图板、定量荧光图板等，随着研究方法的不断归纳，会逐步拓展图板的种类。每个图板都是单独模块，各模块间可相互独立使用，也可综合使用，由安装模块的情况而定。</p>
-<h1 id="技术特点">技术特点</h1><ul>
-<li>桌面应用程序，C/S模式；每个用户安装客户端，连接到后端进行操作</li>
-<li>采用Java语言进行开发；</li>
-<li>采用Java Swing库开发界面；</li>
-<li>采用Java 2D进行二维/三维图形开发</li>
-<li>采用JDBC进行SQL底层编程（连接/操作/查询数据库）,不需要设置ODBC</li>
-<li>支持Oracle 10g/11g和MS Access数据库 </li>
-</ul>
-<p>  本软件是一个典型的桌面应用程序，提供一个现代，用户友好的界面，业务上提供</p>
-<ul>
-<li>图板管理<ul>
-<li>2D/3D 图板创建，更新，删除</li>
-<li>气测图板 - 交汇图板，三角图板</li>
-<li>图板井集管理 - 地图模式（GPS坐标），相邻井，关联井等</li>
-<li>导入/导出</li>
-</ul>
-</li>
-<li>解释应用<ul>
-<li>解释卡层</li>
-<li>解释图板选择</li>
-<li>自动解释结论</li>
-<li>试油建议</li>
-</ul>
-</li>
-<li>审核报表</li>
-<li>用户管理</li>
-<li>数据管理</li>
-</ul>
-<h1 id="一些界面">一些界面</h1><h5 id="1-_生成的图板">1. 生成的图板</h5><p><img src="/images/plates.png" alt="图板"></p>
-<h5 id="2-_井位坐标图">2. 井位坐标图</h5><p><img src="/images/well_set.png" alt="井位坐标图"></p>
-<h5 id="3-_解释时选择图板">3. 解释时选择图板</h5><p><img src="/images/plate_select.png" alt="图板选择"></p>
-<h5 id="4-_井基本信息表">4. 井基本信息表</h5><p><img src="/images/report.png" alt="井基本信息表"></p>
-<p><strong><em>更详细的介绍参看项目<a href="/images/introduction.ppt">PPT</a></em></strong></p>
-
+        
       
     </div>
 
@@ -231,11 +182,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/06/30/曼月乐环随访软件/">曼月乐环随访软件</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/06/30/曼月乐环随访软件/">曼月乐环随访软件</a>
             
           </div>
         </div>
@@ -335,7 +286,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技术特点"><span class="nav-number">2.</span> <span class="nav-text">技术特点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一些界面"><span class="nav-number">3.</span> <span class="nav-text">一些界面</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-_生成的图板"><span class="nav-number">3.0.0.0.1.</span> <span class="nav-text">1. 生成的图板</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-_井位坐标图"><span class="nav-number">3.0.0.0.2.</span> <span class="nav-text">2. 井位坐标图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-_解释时选择图板"><span class="nav-number">3.0.0.0.3.</span> <span class="nav-text">3. 解释时选择图板</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-_井基本信息表"><span class="nav-number">3.0.0.0.4.</span> <span class="nav-text">4. 井基本信息表</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目錄</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
