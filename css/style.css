@@ -180,6 +180,7 @@ a:hover {
   font-size: 1.1em;
   line-height: 1;
   margin-top: 10px;
+  margin-left: 10px;
   color: #999;
   text-shadow: 0 1px #ddd;
 }
@@ -213,7 +214,7 @@ a:hover {
   position: relative;
   background: #fff;
   padding: 20px 30px 15px 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .article.page {
   padding-left: 0;
@@ -1050,7 +1051,7 @@ pre .javascript .function {
 }
 #sidebar .widget {
   background-color: rgba(249, 249, 249, 0.7);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   word-wrap: break-word;
   -webkit-box-shadow: 1px 2px 3px #dddddd;
   box-shadow: 1px 2px 3px #dddddd;
